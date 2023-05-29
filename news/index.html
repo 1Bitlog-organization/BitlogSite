@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>[1BitLog | 1.18.2]</title>
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1"
+        />
+        <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="/images/logo-b-dark.svg"
+        />
+
+        <!-- STYLESHEETS -->
+        <link
+            rel="stylesheet"
+            href="/css/bootstrap.min.css"
+            type="text/css"
+            media="all"
+        />
+        <link
+            rel="stylesheet"
+            href="/css/all.min.css"
+            type="text/css"
+            media="all"
+        />
+        <link
+            rel="stylesheet"
+            href="/css/simple-line-icons.css"
+            type="text/css"
+            media="all"
+        />
+        <link
+            rel="stylesheet"
+            href="/css/slick.css"
+            type="text/css"
+            media="all"
+        />
+        <link
+            rel="stylesheet"
+            href="/css/animate.css"
+            type="text/css"
+            media="all"
+        />
+        <link
+            rel="stylesheet"
+            href="/css/magnific-popup.css"
+            type="text/css"
+            media="all"
+        />
+        <link
+            rel="stylesheet"
+            href="/css/style.css"
+            type="text/css"
+            media="all"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        <script src="index.js"></script>
+    </head>
+
+    <body class="dark">
+        <!-- Preloader -->
+        <div id="preloader">
+            <div class="outer">
+                <!-- Google Chrome -->
+                <div class="infinityChrome">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <!-- Safari and others -->
+                <div class="infinity">
+                    <div>
+                        <span></span>
+                    </div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <div>
+                        <span></span>
+                    </div>
+                </div>
+                <!-- Stuff -->
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    class="goo-outer"
+                >
+                    <defs>
+                        <filter id="goo">
+                            <feGaussianBlur
+                                in="SourceGraphic"
+                                stdDeviation="6"
+                                result="blur"
+                            />
+                            <feColorMatrix
+                                in="blur"
+                                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                                result="goo"
+                            />
+                            <feBlend in="SourceGraphic" in2="goo" />
+                        </filter>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+
+        <!--  mobile header -->
+        <header class="mobile-header-2">
+            <div class="container">
+                <!-- menu ico -->
+                <div class="menu-icon d-inline-flex mr-4">
+                    <button>
+                        <span></span>
+                    </button>
+                </div>
+                <!-- logo image -->
+                <div class="site-logo">
+                    <a href="/">
+                        <img src="/images/logo-b-light.svg" alt="1BitLog" />
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- desktop header -->
+        <header class="desktop-header-2 d-flex align-items-start flex-column">
+            <!-- logo image -->
+            <div class="site-logo">
+                <a href="/">
+                    <img src="/images/logo-b-light.svg" alt="1BitLog" />
+                </a>
+            </div>
+
+            <!-- main menu -->
+            <nav>
+                <ul class="vertical-menu">
+                    <li class="active">
+                        <a href="/#home"><i class="icon-home"></i></a>
+                    </li>
+                    <li>
+                        <a href="/news/#home"><i class="icon-notebook"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <style>
+            #snackbar {
+                visibility: hidden;
+                min-width: 250px;
+                margin-left: -125px;
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                border-radius: 2px;
+                padding: 16px;
+                position: fixed;
+                z-index: 1;
+                left: 50%;
+                top: 30px;
+
+                font-size: 17px;
+            }
+
+            #snackbar.show {
+                visibility: visible;
+                -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+                animation: fadein 0.5s, fadeout 0.5s 2.5s;
+            }
+
+            @-webkit-keyframes fadein {
+                from {
+                    top: 0;
+                    opacity: 0;
+                }
+                to {
+                    top: 30px;
+                    opacity: 1;
+                }
+            }
+
+            @keyframes fadein {
+                from {
+                    top: 0;
+                    opacity: 0;
+                }
+                to {
+                    top: 30px;
+                    opacity: 1;
+                }
+            }
+
+            @-webkit-keyframes fadeout {
+                from {
+                    top: 30px;
+                    opacity: 1;
+                }
+                to {
+                    top: 0;
+                    opacity: 0;
+                }
+            }
+
+            @keyframes fadeout {
+                from {
+                    top: 30px;
+                    opacity: 1;
+                }
+                to {
+                    top: 0;
+                    opacity: 0;
+                }
+            }
+        </style>
+        <!-- main layout -->
+        <main class="content-2">
+            <section id="works">
+                <div class="container">
+                    <!-- section title -->
+                    <h2 class="section-title wow fadeInUp">Новости проекта</h2>
+                    <div class="spacer" data-height="15"></div>
+                    <div
+                        id="display"
+                        class="display"
+                        style="margin-left: 4%"
+                    ></div>
+                </div>
+            </section>
+
+            <!-- section contact -->
+
+            <div class="spacer" data-height="70"></div>
+        </main>
+
+        <!-- Go to top button -->
+        <a href="javascript:" id="return-to-top"
+            ><i class="fas fa-arrow-up"></i
+        ></a>
+
+        <!-- SCRIPTS -->
+
+        <script src="/js/jquery-1.12.3.min.js"></script>
+        <script src="/js/jquery.easing.min.js"></script>
+        <script src="/js/jquery.waypoints.min.js"></script>
+        <script src="/js/jquery.counterup.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/isotope.pkgd.min.js"></script>
+        <script src="/js/infinite-scroll.min.js"></script>
+        <script src="/js/imagesloaded.pkgd.min.js"></script>
+        <script src="/js/slick.min.js"></script>
+        <script src="/js/contact.js"></script>
+        <script src="/js/validator.js"></script>
+        <script src="/js/wow.min.js"></script>
+        <script src="/js/morphext.min.js"></script>
+        <script src="/js/parallax.min.js"></script>
+        <script src="/js/jquery.magnific-popup.min.js"></script>
+        <script src="/js/custom.js"></script>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("snackbar");
+                x.className = "show";
+                setTimeout(function () {
+                    x.className = x.className.replace("show", "");
+                }, 3000);
+            }
+        </script>
+    </body>
+</html>

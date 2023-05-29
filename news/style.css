@@ -1,0 +1,11 @@
+.crd {
+    outline: 2px solid #2a2944;
+    border-radius: 1rem; /* Радиус скругления */
+}
+.element {
+    margin-right: 2%;
+    margin-left: 2%;
+}
+.forms-bt {
+    float: right;
+}

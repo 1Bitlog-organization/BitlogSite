@@ -55,17 +55,19 @@ getJSON(CrmLink, function (err, data) {
 
                         dataElement = document.createElement("div");
                         dataElement.classList.add("element");
-                        dataElement.innerHTML += `<div class="spacer" style="height: 1%;"></div>`;
+                        dataElement.innerHTML += `<div class="spacer" style="height: 15px;"></div>`;
                         dataElement.innerHTML +=
-                            "<h4>" + data.data.attributes.Title + "</h4>";
+                            `<a style="font-size: 18px" class="gob">` +
+                            data.data.attributes.Title +
+                            "</a>";
                         dataElement.innerHTML +=
                             "<p>" + data.data.attributes.Text + "</p>";
                         if (data.data.attributes.Forms == true) {
                             dataElement.innerHTML +=
                                 "<a>" +
-                                data.data.attributes.publishedAt +
+                                datetime +
                                 "</a>" +
-                                `<a class="btn btn-default forms-bt" target="_blank" href="` +
+                                `<a class="btn btn-default forms-bt sub-2" target="_blank" href="` +
                                 data.data.attributes.FormUrl +
                                 `">` +
                                 "Go To Yandex Forms" +

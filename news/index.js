@@ -1,4 +1,4 @@
-var CrmLink = "https://94.19.185.98:8443/api/news-api/";
+var CrmLink = "https://strapi.1bitlog.ru:8443/api/news-api/";
 
 var getJSON = function (url, callback) {
     var xhr = new XMLHttpRequest();

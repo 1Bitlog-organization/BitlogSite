@@ -1,2 +1,2 @@
 # BitLog-site
-Наш сайт для сервера mc.1bitlog.ru
+Cайт для проекта: майнкрафт сервер mc.1bitlog.ru

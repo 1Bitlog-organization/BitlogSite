@@ -33,14 +33,20 @@ Description: Portfolio/CV/Resume HTML Template
 
 */
 @import url("https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic");
+
+.lr {
+    text-align: right;
+    float: right;
+}
+
+.ll {
+    text-align: left;
+    float: left;
+}
+
 /*=================================================================*/
 /*                      BASE                              
 /*=================================================================*/
-.toast {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
 
 * {
     margin: 0;
@@ -120,6 +126,10 @@ h3 {
 
 h4 {
     font-size: 18px;
+}
+
+h6 {
+    font-size: 12px;
 }
 
 a {
@@ -1981,6 +1991,12 @@ body.dark footer.footer {
     box-shadow: 0px 5px 20px 0px rgba(249, 215, 76, 0.5);
 }
 
+.shadow-green {
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(45, 255, 171, 0.5);
+    -moz-box-shadow: 0px 5px 20px 0px rgba(45, 255, 171, 0.5);
+    box-shadow: 0px 5px 20px 0px rgba(45, 255, 171, 0.5);
+}
+
 .padding-30 {
     padding: 30px;
 }
@@ -2141,166 +2157,6 @@ body.dark footer.footer {
 }
 .mfp-close:hover {
     opacity: 0.75;
-}
-
-/*=================================================================*/
-/*                      SLICK SETTINGS
-/*=================================================================*/
-.slick-slide {
-    height: auto;
-    outline: none;
-}
-
-.slick-next,
-.slick-prev {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    background: #454360;
-    border-radius: 0;
-    top: calc(50% - 40px);
-    z-index: 1;
-    -webkit-transform: translateX(0px);
-    -moz-transform: translateX(0px);
-    -ms-transform: translateX(0px);
-    transform: translateX(0px);
-}
-
-.slick-next:hover,
-.slick-next:focus,
-.slick-prev:hover,
-.slick-prev:focus {
-    background: #454360;
-}
-
-.slick-prev {
-    left: 0;
-}
-.slick-prev:hover {
-    background: #454360;
-}
-
-.slick-next {
-    right: 0;
-}
-.slick-next:hover {
-    background: #454360;
-}
-
-.slick-next:before,
-.slick-next:after {
-    left: 20px;
-}
-
-.slick-prev:before,
-.slick-prev:after {
-    left: 17px;
-}
-
-.slick-prev:before {
-    content: "";
-    background: #fff;
-    display: block;
-    width: 1px;
-    height: 14px;
-    top: 8px;
-    position: absolute;
-    -ms-transform: rotate(45deg);
-    /* IE 9 */
-    -webkit-transform: rotate(45deg);
-    /* Chrome, Safari, Opera */
-    transform: rotate(45deg);
-}
-
-.slick-prev:after {
-    content: "";
-    background: #fff;
-    display: block;
-    width: 1px;
-    height: 14px;
-    position: absolute;
-    top: 17px;
-    -ms-transform: rotate(135deg);
-    /* IE 9 */
-    -webkit-transform: rotate(135deg);
-    /* Chrome, Safari, Opera */
-    transform: rotate(135deg);
-}
-
-.slick-next:before {
-    content: "";
-    background: #fff;
-    display: block;
-    width: 1px;
-    height: 14px;
-    top: 8px;
-    position: absolute;
-    -ms-transform: rotate(-45deg);
-    /* IE 9 */
-    -webkit-transform: rotate(-45deg);
-    /* Chrome, Safari, Opera */
-    transform: rotate(-45deg);
-}
-
-.slick-next:after {
-    content: "";
-    background: #fff;
-    display: block;
-    width: 1px;
-    height: 14px;
-    position: absolute;
-    top: 17px;
-    -ms-transform: rotate(45deg);
-    /* IE 9 */
-    -webkit-transform: rotate(45deg);
-    /* Chrome, Safari, Opera */
-    transform: rotate(45deg);
-}
-
-.slick-dotted.slick-slider {
-    margin-bottom: 0;
-}
-
-.slick-dots {
-    position: relative;
-    bottom: 0;
-    padding: 0;
-    margin: 0;
-}
-
-.slick-dots li {
-    width: 10px;
-    height: 6px;
-    margin: 0 5px;
-}
-
-.slick-dots li.slick-active {
-    width: 20px;
-    height: 6px;
-}
-
-.slick-dots li button {
-    width: 10px;
-    height: 6px;
-    padding: 0;
-}
-
-.slick-dots li.slick-active button:before {
-    background: #ff4c60;
-    border-radius: 3px;
-    opacity: 1;
-    height: 6px;
-    width: 20px;
-}
-
-.slick-dots li button:before {
-    content: "";
-    background: #d4d4ff;
-    border-radius: 3px;
-    opacity: 1;
-    height: 6px;
-    width: 10px;
 }
 
 /*=================================================================*/

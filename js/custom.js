@@ -2,6 +2,14 @@ function copyToClipboard(code) {
     navigator.clipboard.writeText(code);
 }
 
+function myFunction(abs) {
+    var x = document.getElementById(abs);
+    x.className = "show";
+    setTimeout(function () {
+        x.className = x.className.replace("show", "");
+    }, 3000);
+}
+
 $(window).on("load", function () {
     "use strict";
 
